@@ -337,16 +337,7 @@ img {
 .social-list-item {
   width: calc((100% - 72px) / 4);
 }
-/*.social-list-link {
-  display: flex;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  line-height: 0;
-}*/
+
 .social-list-icon {
   display: flex;
   background-color: #4d5ae5;
@@ -356,6 +347,7 @@ img {
   height: 100%;
   width: 100%;
   line-height: 0;
+  fill: #f4f4fd;
 }
 /*==================Section 4 - Portfolio=======================*/
 .portfolio-title {
@@ -406,10 +398,15 @@ img {
 }
 
 /*=========================Footer==================================*/
-.footer {
+.footer .container {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+.footer-container {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .footer-logo {
@@ -421,6 +418,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
+  justify-content: flex-start;
   margin-bottom: 16px;
 }
 
@@ -438,6 +436,10 @@ img {
 }
 .footer-social {
   display: flex;
+  align-content: start;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 .social-title {
   font-weight: 500;
@@ -445,4 +447,27 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: FFFFFF;
+}
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+  margin-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.social-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.social-list-icon {
+  display: flex;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  line-height: 0;
+  fill: #f4f4fd;
 }
