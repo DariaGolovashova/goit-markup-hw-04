@@ -43,7 +43,7 @@ h3 {
 img {
   display: block;
   height: auto;
-  max-width: 100%:
+  max-width: 100%;
 }
 
 .section {
@@ -154,6 +154,15 @@ img {
   font-weight: 700;
   background-color: #2e2f42;
   padding: 188px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%, 50%;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/Hero_back_ground.jpg");
+  min-width: 1440px;
 }
 
 .hero .container {
@@ -225,7 +234,28 @@ img {
 .feauter-item {
   width: calc((100% - 72px) / 4);
 }
-
+.box-background {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #0518ea;
+  margin-bottom: 8px;
+}
+.box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feauter-list-icon {
+  display: flex;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 24px 100px;
+  width: 264px;
+  height: 112px;
+}
 .feauter-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -278,7 +308,6 @@ img {
 .team-card {
   padding: 32px 0;
   text-align: center;
-  
 }
 
 .team-subtitle {
@@ -297,7 +326,37 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+  margin-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.social-list-item {
+  width: calc((100% - 72px) / 4);
+}
+/*.social-list-link {
+  display: flex;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  line-height: 0;
+}*/
+.social-list-icon {
+  display: flex;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  line-height: 0;
+}
 /*==================Section 4 - Portfolio=======================*/
 .portfolio-title {
   font-weight: 700;
@@ -325,7 +384,7 @@ img {
 .portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  border-top: none; 
+  border-top: none;
 }
 
 .portfolio-subtitle {
@@ -350,6 +409,7 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  display: flex;
 }
 
 .footer-logo {
@@ -362,7 +422,6 @@ img {
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
-  
 }
 
 .footer-logo-part {
@@ -376,4 +435,14 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer-social {
+  display: flex;
+}
+.social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: FFFFFF;
 }
