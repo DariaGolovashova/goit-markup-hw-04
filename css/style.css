@@ -273,9 +273,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 112px;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 .feauter-list-icon {
   display: flex;
@@ -410,6 +412,8 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+.portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover,
@@ -531,4 +535,8 @@ img {
   margin-top: 8px;
   padding-left: 0;
   padding-right: 0;
+}
+.social-list-link.infooter:hover,
+.social-list-link.infooter:focus {
+  background-color: #31d0aa;
 }
